@@ -1,0 +1,41 @@
+.cabin {
+  
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    font-size: 4rem;
+    vertical-align: middle;
+    color: #ff4747;
+}
+
+
+.p {
+    padding-top:18%;
+    padding-bottom:17%;
+
+}
+
+.l-align {
+    padding-left: 35%;
+    align-items: center;
+    }
+
+.r-align {
+    padding-right:  40%;
+    }
+
+
+@media all and (max-width: 480px){
+
+    .l-align {
+        padding-left: 0%;
+        align-items: center;
+        }
+    
+    .r-align {
+        padding-right:  0%;
+        }
+
+}

@@ -1,0 +1,22 @@
+
+    .b {
+            background-image: url(../assets/spaceship.svg); 
+            
+           
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90% 90%;
+            background-position: top center;
+            position: relative;
+        }
+
+
+
+
+
+
+
+
+
