@@ -4,6 +4,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import {Router} from '@angular/router'
 import { Variable } from '@angular/compiler/src/render3/r3_ast';
 import { DecimalPipe } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 
 
 @Component({
@@ -20,7 +21,7 @@ export class fuselaje implements OnInit {
     planets= ['mercurio','venus','tierra','marte','jupiter','saturno','urano','neptuno','pluton'];
 
   
-    constructor(private _decimalPipe: DecimalPipe, public json: PlanetasService, public rutaActiva: ActivatedRoute, private router: Router){
+    constructor(private sanitization:DomSanitizer, private _decimalPipe: DecimalPipe, public json: PlanetasService, public rutaActiva: ActivatedRoute, private router: Router){
         
      }
 
@@ -50,6 +51,8 @@ export class fuselaje implements OnInit {
 
     getUrl()
     {
-        return "url("+this.image+")";
+        console.log(this.image);
+        
+        return this.sanitization.bypassSecurityTrustStyle(`url(${this.image})`);
     }
 }
