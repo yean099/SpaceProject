@@ -6,7 +6,7 @@
     height: 100%;
 }
 .rocket {
-    height: 90%;
+    height: 50%;
     background: url(/assets/spaceship.svg) no-repeat center;
 }
 
@@ -16,10 +16,26 @@
         background-image: url(/assets/sp-xs.png);
     }
 
+    .footer{
+        height: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100% !important;
+        
+    }
+
+    .tresA > img {
+        float: right;
+        width: 50% !important;
+        height: 50% !important;
+    }
+
 }
 
+
+
 body{
-    height: 90%;
+    height: 70%;
     background: url(/assets/spaceship.svg) no-repeat center !important;
 }
 
@@ -28,15 +44,14 @@ body{
 }
 
 .tresA {
-    width: auto;
-    position: absolute;
     bottom: 0;
     right: 1%;
 }
 
 .tresA > img {
     float: right;
-    width: 70%;
+    width: 10%;
+    height: 10%;
 }
 
 .status {
@@ -49,3 +64,16 @@ body{
     text-shadow: 0px 0px 20px #FFF;
     font-size: 24px;
 }
+
+.footer{
+    height: 10% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% auto;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    
+    
+}
+
+

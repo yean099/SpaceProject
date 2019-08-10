@@ -12,8 +12,8 @@
 
 
 .p {
-    padding-top:18%;
-    padding-bottom:17%;
+    padding-top:15%;
+    padding-bottom:14%;
 
 }
 
@@ -37,5 +37,9 @@
     .r-align {
         padding-right:  0%;
         }
+    .p{
+        padding-top: 50%;
+    padding-bottom: 50%;
+    }
 
 }
